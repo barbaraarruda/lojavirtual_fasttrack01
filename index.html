@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/258160b9cd.js" crossorigin="anonymous"></script>
+    <title>Nini Shopping</title>
+  </head>
+  <body style="min-width: 372px;"> <!--se um dispositivo tiver resolução menor, vai causar rolagem na horizontal-->
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom shadow-sm mb-3" style="background-color: #d08cde;">
+        <div class="container">
+            <a class="navbar-brand" href="#"><strong>Nini Shopping</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse" collapse>
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a href="#"class="nav-link text-white">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"class="nav-link text-white">Feminino</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"class="nav-link text-white">Masculino</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"class="nav-link text-white">Infantil</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="align-self-end"> <!--faz o elemento ficar alinhado a direita, de forma flutuante-->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#"class="nav-link text-white">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"class="nav-link text-white">Cadastrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"class="nav-link text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                              </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container">
+        <div id="carouselMain" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/slides/banner1.png" alt="Banner" class="img-fluid d-none d-md-block">
+                    <img src="img/slides/banner1small.png" alt="" class="img-fluid d-block d-md-none">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slides/banner2.png" alt="" class="img-fluid d-none d-md-block">
+                    <img src="img/slides/banner2small.png" alt="" class="img-fluid d-block d-md-none">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slides/banner3.png" alt="" class="img-fluid d-none d-md-block">
+                    <img src="img/slides/banner3small.png" alt="" class="img-fluid d-block d-md-none">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+        <hr class="mt-3"/>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <form class="justify-content-center justify-content-md-start mb-3 mb-md-0"> <!--conteúdo para resposividade-->
+                        <div class="input-group input-group-sm">
+                            <input type="text" class="form-control" placeholder="Digite aqui o que procura">
+                            <button class="btn btn-danger" style="background-color: #d08cde; border-color: blueviolet;">Buscar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-md-7">
+                    <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start"> <!--começar colocando os conteúdos que devem aparecer primeiro a direita dentro da div-->
+                        <form class="ml-3 d-inline-block">
+                            <select class="form-select form-select-sm">
+                                <option>Ordenar pelo nome</option>
+                                <option>Ordenar pelo menor preço</option>
+                                <option>Ordenar pelo maior preço</option>
+                            </select>
+                        </form>
+                        <nav class="d-inline-block">
+                            <ul class="pagination pagination-sm my-0">
+                                <li class="page-item">
+                                    <button class="page-link">1</button>
+                                </li>
+                                <li class="page-item">
+                                    <button class="page-link">2</button>
+                                </li>
+                                <li class="page-item"> <!--colocar o disabled dentro da classe caso queira-->
+                                    <button class="page-link">3</button>
+                                </li>
+                                <li class="page-item">
+                                    <button class="page-link">4</button>
+                                </li>
+                                <li class="page-item">
+                                    <button class="page-link">5</button>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-3">
+            <div class="row">
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch"> <!--responsividade-->
+                    <div class="card text-center bg-light">
+                        <img src="" alt="">
+                        <div class="card-header"> <!--usando os recursos de cartão do bootstrap-->
+
+                        </div>
+                        <div class="card-body">
+
+                        </div>
+                        <div class="card-footer">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-top fixed-bottom text-muted bg-light">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-12 col-md-4 text-center text-md-left">
+                    &copy; 2023 - Nini Shopping | Criado por <a href="https://saturncode.vercel.app/"><span><i class="fa-regular fa-star" animation="go-back 2s infinite" color="#d08cde"></i> Saturn Code </span></a>
+                   
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <a href="#" class="text-decoration-none- text-dark">Política de Privacidade</a>
+                </div>
+                <div class="col-12 col-md-4 text-center text-md-right">
+                    <a href="#" class="text-decoration-none- text-dark">Administrar</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+   
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+  </body>
+</html>

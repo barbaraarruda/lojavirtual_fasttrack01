@@ -58,6 +58,51 @@
         <hr>
         <form>
             <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <fieldset class="row"> <!--definir um container e logo em seguida um row, indica que podemos trabalhar e subdividir em até 12 colunas-->
+                        <legend>Dados Pessoais</legend>
+                        <div class="mb-3">
+                            <label for="txtNome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="txtnome" placeholder="Informe seu nome">
+                        </div>
+                        <div class="mb-3 col-md-6 col-xl-4">
+                            <label for="txtCPF" class="form-label">CPF</label>
+                            <span class="text-muted">(somente números)</span>
+                            <input type="text" class="form-control" id="txtCPF" placeholder="Informe seu CPF">
+                        </div>
+                        <div class="mb-3 col-md-6 col-xl-4">
+                            <label for="txtDataNascimento" class="form-label">Data de Nascimento</label>
+                            <input type="date" class="form-control" id="txtDataNascimento" placeholder="Informe sua data de nascimento">
+                        </div>
+                       
+                    </fieldset>
+                    <fieldset>
+                        <legend>Dados para contato</legend>
+                        <div class="mb-3 col-md-8">
+                            <label for="txtEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="txtemail" placeholder="Informe seu email">
+                        </div>
+                        <div class="mb-3 col-md-6">
+                            <label for="txtTelefone" class="form-label">Telefone</label>
+                            <span class="text-muted">(informar número com DDD)</span>
+                            <input type="tel" class="form-control" id="txtTelefone" placeholder="Informe seu telefone" size="20">
+                        </div>
+                          
+                    </fieldset>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <fieldset class="row">
+                        <legend>Endereço</legend>
+                        <div class="mb-3 col-md-6 col-lg-4">
+                            <label for="txtCEP" class="form-label">CEP</label>
+                            <input type="text" class="form-control" id="txtCEP" placeholder="Informe seu CEP">
+                        </div>
+                        <div class="mb-3 col-md-6 col-lg-8">
+                            <textarea class="form-control text-muted bg-light" disabled>Informe o CEP para buscarmos o endereço automaticamente.
+                            </textarea>
+                        </div>
+                    </fieldset>
+                </div>
                 
             </div>
         </form>

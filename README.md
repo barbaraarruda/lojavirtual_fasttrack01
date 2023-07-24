@@ -1,2 +1,2 @@
-# lojavirtual_fasttrack01
-Projeto prático do Imã Tech - Desafio Fast Track - Loja virtual
+# ninishopping
+Projeto prático: construção de loja virtual responsiva utilizando Bootstrap 5.

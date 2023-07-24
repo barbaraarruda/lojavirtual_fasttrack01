@@ -13,14 +13,14 @@
 <body style="min-width: 372px;"> <!--responsividade-->
     <nav class="navbar navbar-expand-lg navbar-light border-bottom shadow-sm mb-3" style="background-color: #d08cde;">
         <div class="container">
-            <a class="navbar-brand" href="#"><strong>Nini Shopping</strong></a>
+            <a class="navbar-brand" href="index.html"><strong>Nini Shopping</strong></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse" collapse>
                 <ul class="navbar-nav flex-grow-1">
                     <li class="nav-item">
-                        <a href="#"class="nav-link text-white">Home</a>
+                        <a href="index.html"class="nav-link text-white">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="#"class="nav-link text-white">Feminino</a>
@@ -39,7 +39,7 @@
                         <a href="#"class="nav-link text-white">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#"class="nav-link text-white">Cadastrar</a>
+                        <a href="cadastro.html"class="nav-link text-white">Cadastrar</a>
                     </li>
                     <li class="nav-item">
                         <a href="#"class="nav-link text-white">
@@ -60,7 +60,7 @@
             <div class="row">
                 <div class="col-sm-12 col-md-6">
                     <fieldset class="row"> <!--definir um container e logo em seguida um row, indica que podemos trabalhar e subdividir em até 12 colunas-->
-                        <legend>Dados Pessoais</legend>
+                        <legend style="color: #d08cde;">Dados Pessoais</legend>
                         <div class="mb-3">
                             <label for="txtNome" class="form-label">Nome</label>
                             <input type="text" class="form-control" id="txtnome" placeholder="Informe seu nome">
@@ -77,7 +77,7 @@
                        
                     </fieldset>
                     <fieldset>
-                        <legend>Dados para contato</legend>
+                        <legend style="color: #d08cde;">Dados para contato</legend>
                         <div class="mb-3 col-md-8">
                             <label for="txtEmail" class="form-label">Email</label>
                             <input type="email" class="form-control" id="txtemail" placeholder="Informe seu email">
@@ -92,19 +92,54 @@
                 </div>
                 <div class="col-sm-12 col-md-6">
                     <fieldset class="row">
-                        <legend>Endereço</legend>
+                        <legend style="color: #d08cde;">Endereço</legend>
                         <div class="mb-3 col-md-6 col-lg-4">
                             <label for="txtCEP" class="form-label">CEP</label>
                             <input type="text" class="form-control" id="txtCEP" placeholder="Informe seu CEP">
                         </div>
-                        <div class="mb-3 col-md-6 col-lg-8">
-                            <textarea class="form-control text-muted bg-light" disabled>Informe o CEP para buscarmos o endereço automaticamente.
+                        <div class="mb-3 col-md-6 col-lg-8 align-self-end">
+                            <textarea class="form-control text-muted bg-light" style="height:68px;" disabled>Informe o CEP para buscarmos o endereço automaticamente.
                             </textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="txtLogradouro" class="form-label">Logradouro</label>
+                            <input type="text" class="form-control" id="txtLogradouro" placeholder="Informe seu logradouro">    
+                        </div>
+                        <div class="mb-3 col-md-4">
+                            <label for="txtComplemento" class="form-label">Complemento</label>
+                            <input type="text" class="form-control" id="txtComplemento" placeholder="Informe o complemento">
+                        </div>
+                        <div class="mb-3 col-md-8">
+                            <label for="txtReferencia" class="form-label">Referência</label>
+                            <input type="text" class="form-control" id="txtReferencia" placeholder="Informe a referência">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend style="color: #d08cde;">Senha de Acesso</legend>
+                        <div class="mb-3">
+                            <label for="txtSenha" class="form-label">Senha</label>
+                            <input type="password" class="form-control" id="txtSenha" placeholder="Informe sua senha">
+                        </div>
+                        <div class="mb-3">
+                            <label for="txtConfirmarSenha" class="form-label">Confirmar Senha</label>
+                            <input type="password" class="form-control" id="txtConfirmarSenha" placeholder="Confirme sua senha">
                         </div>
                     </fieldset>
                 </div>
                 
             </div>
+            <hr>
+            <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" value="" id="chkPromocoes">
+                <label for="chkPromocoes" class="form-check-label">Desejo receber promoções e novidades por email.</label>
+            </div>
+            <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" value="" id="chkTermos" required>
+                <label for="chkTermos" class="form-check-label">Eu aceito os termos e condições do site.</label>
+            </div>
+            <div class="mb-3">
+                <input type="submit" class="btn btn-light btn-outline-success" value="Cadastrar" onclick="window.location.href='cadastroconfirma.html'">
+                <a class="btn btn-light btn-outline-danger" href="index.html">Cancelar</a>
         </form>
     </div>
 
